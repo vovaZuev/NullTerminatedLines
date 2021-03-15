@@ -13,7 +13,7 @@ int main()
 	//char sz_str[] = {'H','e','l','l','o', '\0'};
 	/*char sz_str[] = "Hello";
 	cout << sz_str << endl;*/
-	const int n = 20;
+	const int n = 256;
 	char sz_str[n] = {};
 	cout << "¬ведите строку: ";
 	//cin >> sz_str;
@@ -81,4 +81,5 @@ void Shrink(char str[])
 		str[i] = buffer[i];
 		str[cnt] = 0;
 	}
+	delete[] buffer;
 }
